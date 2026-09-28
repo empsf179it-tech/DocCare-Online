@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="description" content="DocCare Online — modern doctor appointment platform for patients and healthcare professionals.">
+<title>DocCare Online — Doctor Appointment Platform</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect x='2' y='2' width='60' height='60' rx='18' fill='%23eaf6ff' stroke='%23ffffff' stroke-width='4'/%3E%3Cpath d='M32 17v30M17 32h30' stroke='%231479ff' stroke-width='8' stroke-linecap='round'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div id="public-layout">
+<div class="nav-shell">
+<nav class="navbar glass">
+<a href="index.html" class="logo">
+<div class="logo-mark"><svg viewBox="0 0 64 64" fill="none" stroke="var(--blue)" stroke-width="8" stroke-linecap="round" style="width: 24px; height: 24px;"><path d="M32 17v30M17 32h30"/></svg></div>
+<div class="logo-wordmark"><strong>DocCare</strong><em>Online</em></div>
+</a>
+<div class="nav-links">
+<a href="index.html" >Home</a>
+<a href="about.html">About Us</a>
+<a href="services.html" class="active">Services</a>
+<a href="doctors.html">Doctors</a>
+<div class="dropdown">
+<button class="drop-toggle">More <svg style="width:12px;display:inline-block;vertical-align:middle" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="3"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg></button>
+<div class="drop-menu">
+<a href="specialties.html">Specialties</a>
+<a href="how-it-works.html">How it Works</a>
+<a href="resources.html">Resources</a>
+<a href="contact.html">Contact</a>
+</div>
+</div>
+<a href="auth.html" class="login-nav" >Login / Sign Up</a>
+</div>
+<button class="menu-btn" onclick="toggleMenu()"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/></svg></button>
+</nav>
+</div>
+<main id="main-content">
+<section class="section hero"><div class="container"><div class="page-title reveal"><h1>Our Services</h1><p>Comprehensive medical care tailored to your needs. From urgent consultations to ongoing mental health support, we've got you covered.</p></div></div></section>
+<section class="section"><div class="container"><div style="display:grid;grid-template-columns:repeat(auto-fit, minmax(280px, 1fr));gap:24px;margin-top:20px">
+<div class="card glass service-card reveal"><div class="service-image"><img src="image/Telehealth%20Consultations.png"></div><h3>Telehealth Consultations</h3><p>Connect with expert physicians via high-definition video for diagnosis, treatment plans, and instant medical advice from anywhere.</p><div class="service-foot"><span class="price">$49 / Visit</span><a href="auth.html" class="btn btn-primary" style="min-height:36px;font-size:0.85rem">Book Now</a></div></div>
+<div class="card glass service-card reveal" style="transition-delay:0.1s"><div class="service-image"><img src="image/Specialist%20Referrals.png"></div><h3>Specialist Referrals</h3><p>Get fast-tracked referrals to top-tier specialists across our extensive medical network for advanced care and diagnostics.</p><div class="service-foot"><span class="price">$89 / Session</span><a href="auth.html" class="btn btn-primary" style="min-height:36px;font-size:0.85rem">Book Now</a></div></div>
+<div class="card glass service-card reveal" style="transition-delay:0.2s"><div class="service-image"><img src="image/Chronic%20Care%20Management.png"></div><h3>Chronic Care Management</h3><p>Continuous remote monitoring and personalized care plans designed specifically to help you manage long-term health conditions.</p><div class="service-foot"><span class="price">$29 / Request</span><a href="auth.html" class="btn btn-primary" style="min-height:36px;font-size:0.85rem">Book Now</a></div></div>
+<div class="card glass service-card reveal" style="transition-delay:0.3s"><div class="service-image"><img src="image/Pediatric%20Virtual%20Care.png"></div><h3>Pediatric Virtual Care</h3><p>Specialized online care for your children, providing parents with peace of mind and quick access to expert pediatricians 24/7.</p><div class="service-foot"><span class="price">$59 / Visit</span><a href="auth.html" class="btn btn-primary" style="min-height:36px;font-size:0.85rem">Book Now</a></div></div>
+</div></div></section><section class="section"><div class="container"><div class="banner reveal"><div><h2>Experience healthcare without the hassle.</h2></div><a href="auth.html" class="btn btn-primary">Start Now</a></div></div></section>
+<!-- Services Section 1: Insurance -->
+<section class="section" style="padding:100px 0;background:var(--bg2)">
+  <div class="container reveal">
+    <div style="text-align:center;max-width:600px;margin:0 auto 50px">
+      <h2 style="font-size:2.6rem;letter-spacing:-0.03em">Insurance & Pricing</h2>
+      <p style="color:var(--muted);font-size:1.1rem;margin-top:10px">Transparent pricing with no hidden fees. We accept most major insurance providers.</p>
+    </div>
+    <div class="grid grid-4" style="gap:24px;max-width:1000px;margin:0 auto">
+      <div class="card glass" style="display:flex;align-items:center;justify-content:center;padding:30px 20px;border:1px solid rgba(20,121,255,0.08);background:var(--white)">
+        <h3 style="font-size:1.6rem;color:#00529B;font-weight:850;margin:0;letter-spacing:-0.02em">BlueCross</h3>
+      </div>
+      <div class="card glass" style="display:flex;align-items:center;justify-content:center;padding:30px 20px;border:1px solid rgba(20,121,255,0.08);background:var(--white)">
+        <h3 style="font-size:1.8rem;color:#D31145;font-weight:850;margin:0;letter-spacing:-0.02em">aetna</h3>
+      </div>
+      <div class="card glass" style="display:flex;align-items:center;justify-content:center;padding:30px 20px;border:1px solid rgba(20,121,255,0.08);background:var(--white)">
+        <h3 style="font-size:1.7rem;color:#0071CE;font-weight:850;margin:0;letter-spacing:-0.02em">Cigna</h3>
+      </div>
+      <div class="card glass" style="display:flex;align-items:center;justify-content:center;padding:30px 20px;border:1px solid rgba(20,121,255,0.08);background:var(--white)">
+        <h3 style="font-size:1.35rem;color:#1B3668;font-weight:850;margin:0;letter-spacing:-0.02em">UnitedHealthcare</h3>
+      </div>
+    </div>
+    <p style="text-align:center;margin-top:30px;color:var(--blue);font-weight:700">Don't see yours? <a href="contact.html" style="text-decoration:underline">Contact us</a></p>
+  </div>
+</section>
+<!-- Services Section 2: Prescription Delivery -->
+<section class="section" style="padding:110px 0">
+  <div class="container reveal">
+    <div class="split" style="align-items:center;gap:60px">
+      <div>
+        <h2 style="font-size:2.8rem;line-height:1.1;margin-bottom:20px;letter-spacing:-0.04em">Direct to Door Prescriptions</h2>
+        <p style="color:var(--muted);font-size:1.1rem;line-height:1.6;margin-bottom:20px">Not only do our doctors prescribe medication digitally, but we also partner with leading online pharmacies to deliver your medication directly to your doorstep within 24 hours.</p>
+        <ul style="list-style:none;padding:0;color:var(--ink);font-weight:600">
+          <li style="margin-bottom:12px">✓ Free overnight shipping</li>
+          <li style="margin-bottom:12px">✓ Automatic refill reminders</li>
+          <li>✓ Discreet packaging</li>
+        </ul>
+      </div>
+      <div class="split-media">
+        <img src="image/Direct%20to%20Door%20Prescriptions.png">
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Services Section 3: FAQ -->
+<section class="section" style="padding:80px 0;border-top:1px solid rgba(0,0,0,0.05)">
+  <div class="container reveal" style="max-width:700px">
+    <h2 style="text-align:center;font-size:2.5rem;margin-bottom:50px">Frequently Asked Questions</h2>
+    <div class="faq-item" style="margin-bottom:20px;padding:24px;background:var(--white);border-radius:18px;border:1px solid rgba(20,121,255,0.08);box-shadow:0 10px 30px rgba(27,78,121,0.03)">
+      <div class="faq-header" style="display:flex;align-items:center;justify-content:space-between;cursor:pointer;margin-bottom:0">
+        <h4 style="font-size:1.15rem;margin:0;color:var(--ink)">Are the doctors qualified?</h4>
+        <svg class="faq-icon" style="width:20px;height:20px;color:var(--blue);transition:transform 0.3s" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+      </div>
+      <p class="faq-answer" style="color:var(--muted);margin:12px 0 0;line-height:1.65;display:none">Yes, all our doctors are board-certified, state-licensed, and go through a rigorous background check and interview process.</p>
+    </div>
+    <div class="faq-item" style="margin-bottom:20px;padding:24px;background:var(--white);border-radius:18px;border:1px solid rgba(20,121,255,0.08);box-shadow:0 10px 30px rgba(27,78,121,0.03)">
+      <div class="faq-header" style="display:flex;align-items:center;justify-content:space-between;cursor:pointer;margin-bottom:0">
+        <h4 style="font-size:1.15rem;margin:0;color:var(--ink)">How long is a typical consultation?</h4>
+        <svg class="faq-icon" style="width:20px;height:20px;color:var(--blue);transition:transform 0.3s" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+      </div>
+      <p class="faq-answer" style="color:var(--muted);margin:12px 0 0;line-height:1.65;display:none">Most urgent care visits last between 10 to 15 minutes. Therapy and psychiatric sessions typically last 45 minutes.</p>
+    </div>
+    <div class="faq-item" style="padding:24px;background:var(--white);border-radius:18px;border:1px solid rgba(20,121,255,0.08);box-shadow:0 10px 30px rgba(27,78,121,0.03)">
+      <div class="faq-header" style="display:flex;align-items:center;justify-content:space-between;cursor:pointer;margin-bottom:0">
+        <h4 style="font-size:1.15rem;margin:0;color:var(--ink)">Can I get a doctor's note for work?</h4>
+        <svg class="faq-icon" style="width:20px;height:20px;color:var(--blue);transition:transform 0.3s" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+      </div>
+      <p class="faq-answer" style="color:var(--muted);margin:12px 0 0;line-height:1.65;display:none">Absolutely. If clinically appropriate, the doctor can provide a digital medical certificate for your employer or school.</p>
+    </div>
+  </div>
+  <script>
+    document.querySelectorAll('.faq-header').forEach(header => {
+      header.addEventListener('click', () => {
+        const answer = header.nextElementSibling;
+        const icon = header.querySelector('.faq-icon');
+        const isOpen = answer.style.display === 'block';
+        document.querySelectorAll('.faq-answer').forEach(a => a.style.display = 'none');
+        document.querySelectorAll('.faq-icon').forEach(i => i.style.transform = 'rotate(0deg)');
+        if (!isOpen) {
+          answer.style.display = 'block';
+          icon.style.transform = 'rotate(180deg)';
+        }
+      });
+    });
+  </script>
+  </div>
+</section>
+</main>
+<footer><div class="container"><div class="footer">
+<div><a href="index.html" class="logo"><div class="logo-mark"><svg viewBox="0 0 64 64" fill="none" stroke="var(--blue)" stroke-width="8" stroke-linecap="round" style="width: 24px; height: 24px;"><path d="M32 17v30M17 32h30"/></svg></div><div class="logo-wordmark"><strong>DocCare</strong><em>Online</em></div></a><p>Your trusted partner in digital healthcare. Connect with top specialists and manage your health seamlessly.</p><div class="social-row"><a href="#" class="social-icon facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M14 13.5h2.5l1-4H14v-2c0-1.03 0-2 2-2h1.5V2.14c-.326-.043-1.557-.14-2.857-.14C11.928 2 10 3.657 10 6.7v2.8H7v4h3V22h4v-8.5z"/></svg></a><a href="#" class="social-icon instagram"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg></a><a href="#" class="social-icon linkedin"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a><a href="#" class="social-icon x-social"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z"/></svg></a></div></div>
+<div><h4>Quick Links</h4><a href="about.html">About Us</a><a href="services.html">Our Services</a><a href="doctors.html">Find a Doctor</a><a href="contact.html">Contact Us</a></div>
+<div><h4>Legal</h4><a href="#">Privacy Policy</a><a href="#">Terms of Service</a><a href="#">Cookie Policy</a><a href="#">Accessibility</a></div>
+</div></div></footer>
+</div>
+<div id="toast" class="toast"></div>
+<button id="back-top" class="back-top" onclick="scrollToTop()"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="3" style="width:20px;height:20px"><path stroke-linecap="round" stroke-linejoin="round" d="M5 15l7-7 7 7"/></svg></button>
+<script src="js/app.js"></script>
+</body>
+</html>
